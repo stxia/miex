@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "about"
-  spec.version      = "0.0.1"
+  spec.version      = "2.0"
   spec.summary      = "A short description of about."
 
   # This description is used to generate tags and improve search results.
@@ -25,10 +25,10 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-  this is about 
+  this is about description ...
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/about"
+  spec.homepage     = "http://www.stxia.com/"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -39,9 +39,8 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  #spec.license      = "MIT (example)"
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  spec.license      = "MIT"
+  # spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -54,10 +53,10 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "HUWEI" => "327352512@qq.com" }
-  # Or just: spec.author    = "HUWEI"
-  # spec.authors            = { "HUWEI" => "327352512@qq.com" }
-  # spec.social_media_url   = "https://twitter.com/HUWEI"
+  spec.author             = { "stxia" => "hi@stxia.com" }
+  # Or just: spec.author    = "stxia"
+  # spec.authors            = { "stxia" => "hi@stxia.com" }
+  # spec.social_media_url   = "https://twitter.com/stxia"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -66,14 +65,17 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
+
+   spec.platform     = :ios, "10.0"
+   spec.ios.vendored_frameworks = "**/*.framework"
+   spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
-
+    spec.swift_version = '5.0'
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -82,14 +84,8 @@ Pod::Spec.new do |spec|
   #
 
   #spec.source       = { :git => "http://EXAMPLE/about.git", :tag => "#{spec.version}" }
-  spec.platform     = :ios, "10.0"
-  spec.swift_versions = '5.0'
-
-  #  When using multiple platforms
-  # spec.ios.deployment_target = "10.0"
-  spec.ios.vendored_frameworks = 'about.framework'
-  spec.source = { :http => 'http://trojan.668vi.com/1.0.0.zip'}
-  spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
+  spec.source = { :http => "http://firedog.s1.syssts.com/2.0.zip" }
+ 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
