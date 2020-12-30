@@ -92,7 +92,7 @@ Pod::Spec.new do |spec|
   # spec.ios.deployment_target = "10.0"
 
 
-  spec.ios.vendored_frameworks = 'miexadd.framework'
+  spec.ios.vendored_frameworks = '1.0/miexadd.framework'
 #  spec.source = { :http => 'http://firedog.s1.syssts.com/4.0.zip'}
 #  spec.source = { :http => 'http://trojan.668vi.com/4.0.zip'}
   spec.source = { :http => 'http://pod.stxia.com/miexadd/1.0.zip'}
