@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
   this is miexadd 
                    DESC
 
-  spec.homepage     = "http://www.stxia.com/about"
+  spec.homepage     = "http://www.stxia.com/miexadd"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -97,7 +97,7 @@ Pod::Spec.new do |spec|
 #  spec.source = { :http => 'http://trojan.668vi.com/4.0.zip'}
   spec.source = { :http => 'http://pod.stxia.com/miexadd/1.0.zip'}
 
-  spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 arm64' }
+  spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
 
 
 
